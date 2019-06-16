@@ -14,8 +14,7 @@ import LoadingOverlay from 'react-loading-overlay';
 
 import api from '../../api'
 
-
-const backgroundShape = require('../../assets/images/shape.svg');
+import { backgroundShape } from '../../assets/images'
 
 const styles = theme => ({
   root: {
@@ -97,7 +96,7 @@ const styles = theme => ({
   }
 });
 
-class Main extends Component {
+class Home extends Component {
 
   state = {
     todos: [],
@@ -187,4 +186,4 @@ class Main extends Component {
   }
 }
 
-export default withRouter(withStyles(styles)(Main));
+export default withRouter(withStyles(styles)(Home));
